@@ -4,7 +4,7 @@ def steps(number):
     """This function returns the number of times it takes for a number to be divided timm it reaches 1"""
     
     if number <= 0:
-        raise ValueError("Invalid Number. Number is below 1")
+        raise ValueError("Only positive integers are allowed")
     else:
         times = 0
 
@@ -20,3 +20,7 @@ def steps(number):
             number = result
 
     return times
+
+
+me = steps(12)
+print(me)
