@@ -5,12 +5,9 @@ def square(number):
     """
     if number > 64 or number < 1:
         raise ValueError("square must be between 1 and 64")
-    else:
-        grain_start = 1  
+    else:  
         if number > 1:
-            for i in range(number-1):
-                grain_start += grain_start
-            grain_per_square = grain_start
+            grain_per_square = 1 << number - 1
         else:
             grain_per_square = 1
 
@@ -21,6 +18,7 @@ def total():
     """
     This function calculates the number of wheat grain in a chess board
     """
-    total = square(64) * 2
+    return ((1 << 64) - 1)
 
-    return total - 1
+
+square(4)
