@@ -1,3 +1,4 @@
+"""module checks if an int is an Armstong number"""
 def is_armstrong_number(number:int):
     """
     :param number - integer to be verified
