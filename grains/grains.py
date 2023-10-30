@@ -19,6 +19,3 @@ def total():
     This function calculates the number of wheat grain in a chess board
     """
     return ((1 << 64) - 1)
-
-
-square(4)
