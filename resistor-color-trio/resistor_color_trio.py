@@ -7,8 +7,7 @@ def label(colors):
             continue
         value += f"{rgb.index(color)}"
 
-    for _ in range(rgb.index(colors[2])):
-        value += "0"
+    value = value + ("0" * rgb.index(colors[2]))
 
     if value.count("0") >= 9:
         return f"{value[:-9]} gigaohms"
